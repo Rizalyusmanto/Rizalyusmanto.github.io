@@ -1,0 +1,6 @@
+Animasi on scroll
+https://www.youtube.com/watch?v=7ZNR3dUBZ14
+https://michalsnik.github.io/aos/
+
+Wave
+https://www.skysensolution.com/baca/Belajar-Bootstrap-5/Membuat-Wave-Menggunakan-GetWaves-IO
