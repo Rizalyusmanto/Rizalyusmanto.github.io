@@ -2,6 +2,11 @@
         --pink: #f14e95;
         --bg: #0a0a0a;
         --shadow: 0 2px 2px rgb(0 0 0/0.5);
+        --background: rgb(238,174,202);
+        --background-gradient: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        --background-gradient-2: linear-gradient(0deg, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0.5) 100%);
+        --background-gradient-3: linear-gradient(180deg, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0.5) 100%);
+        --background-gradient-4: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
 
     body {
@@ -97,6 +102,7 @@
 }
 
 .home{
+    background: var(--background-gradient-2);
     position: relative;
     min-height: 100vh;
     margin-top: -5.2rem;
@@ -200,7 +206,8 @@
 }
 
 .info{
-    background-color:rgba(241, 78, 149,0.2);
+    background: var(--background);
+    background: var(--background-gradient);
     position: relative;
     min-height: 100vh;
     margin-top: 0px;
@@ -274,11 +281,29 @@
     -webkit-filter:blur(1px);
 }
 
-.story, .gallery, .rsvp, .gifts {
+.story{
+    background: var(--background);
+    background: var(--background-gradient-2);
+    position: relative;
+    min-height: 100vh;
+    margin-top: 0px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    color: var(--bg);
+}
+
+.gallery, .rsvp {
     position: relative;
     padding-top: 8rch;
     padding-bottom: 7rem;
 } 
+
+.gifts{
+    position: relative;
+    padding-top: 8rch;
+    padding-bottom: 7rem;
+    background: var(--background-gradient-4);
+}
 
 .story span, .gallery span, .gifts span {
     text-transform: uppercase;
@@ -408,7 +433,7 @@
 }
 
 .gallery {
-    background-color:rgba(241, 78, 149,0.3);
+    background: var(--background-gradient);
     
 }
 
@@ -442,8 +467,8 @@
 
 
 footer{
-    padding: 3rem;
-    background-color:rgba(241, 78, 149,0.3);
+    padding: 4rem;
+    background: var(--background-gradient);
     color: white;
 }
 
